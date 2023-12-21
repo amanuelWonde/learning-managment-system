@@ -1,75 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Courses</title>
-    <link rel="stylesheet" href="../css/course.css">
-</head>
-<body>
+    <!-- <link rel="stylesheet" href="../css/course.css"> -->
+  </head>
+  <body>
     <div class="container">
-        <div class="header">
-            My courses
+      <div class="header">My courses</div>
+      <div class="course-container">
+        <div class="course-header">Course OverView</div>
+        <div class="course-filters">
+          <select class="progress" name="Progress">
+            <option value="" selected>In Progress</option>
+            <option value="">javascript</option>
+            <option value="">python</option>
+            <option value="">C++</option>
+          </select>
+          <input
+            type="text"
+            class="search"
+            placeholder="search..."
+            list="progress"
+          />
+          <datalist id="progress" class="progress">
+            <option selected>Sort by course</option>
+            <option>javascript</option>
+            <option>python</option>
+            <option>C++</option>
+          </datalist>
         </div>
-        <div class="course-container">
-            <div class="course-header">
-                Course OverView
+        <div class="courses">
+          <div class="card">
+            <span
+              ><img
+                width="400px"
+                class="card-image"
+                src="../images/gifjs.gif"
+                alt=""
+            /></span>
+            <div class="card-text">
+              <a href="course_detail.html"
+                ><p class="title">Javascript for frontend</p></a
+              >
+              <span>Javascript</span>
             </div>
-            <div class="course-filters">
-                <select class="progress" name="Progress">
-                    <option value="" selected>In Progress</option>
-                    <option value="">javascript</option>
-                    <option value="">python</option>
-                    <option value="">C++</option>
-                </select>
-                <input type="text" class="search" placeholder="search ...">
-                <select class="progress" name="Progress">
-                    <option value="" selected>Sort by course </option>
-                    <option value="">javascript</option>
-                    <option value="">python</option>
-                    <option value="">C++</option>
-                </select>
+          </div>
+          <div class="card">
+            <span
+              ><img
+                width="400px"
+                class="card-image"
+                src="../images/python gif.gif"
+                alt=""
+            /></span>
+            <div class="card-text">
+              <a href="course_detail.html"
+                ><p class="title">Python for Beginners</p></a
+              >
+              <span>Python </span>
             </div>
-            <div class="courses">
-                <div class="card">
-                    <span ><img width="400px" class="card-image" src="../images/gifjs.gif" alt=""></span>
-                    <div class="card-text">
-                        <a href="course_detail.html"><p class="title">Javascript for frontend</p></a>
-                        <span>Javascript</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <span ><img width="400px" class="card-image" src="../images/python gif.gif" alt=""></span>
-                    <div class="card-text">
-                        <a href="course_detail.html"><p class="title">Python for Beginners</p></a>
-                        <span>Python </span>
-                    </div>
-                </div>
-                <div class="card">
-                    <span ><img width="400px" class="card-image" src="../images/hacking.gif" alt=""></span>
-                    <div class="card-text">
-                        <a href="course_detail.html"><p class="title">Hacking course</p></a>
-                        <span>Hacking </span>
-                    </div>
-                </div>
-                <div class="card">
-                    <span ><img width="400px" class="card-image" src="../images/java.gif" alt=""></span>
-                    <div class="card-text">
-                        <a href="course_detail.html"><p class="title"> Java for Android</p></a>
-                        <span>Java</span>
-                    </div>
-                </div>
-                <div class="card">
-                    <span ><img width="400px" class="card-image" src="../images/c++.gif" alt=""></span>
-                    <div class="card-text">
-                        <a href="course_detail.html"><p class="title">C++for Operationg Systems</p></a>
-                        <span>C++ </span>
-                    </div>
-                </div>
+          </div>
+          <div class="card">
+            <span
+              ><img
+                width="400px"
+                class="card-image"
+                src="../images/hacking.gif"
+                alt=""
+            /></span>
+            <div class="card-text">
+              <a href="course_detail.html"
+                ><p class="title">Hacking course</p></a
+              >
+              <span>Hacking </span>
             </div>
+          </div>
+          <div class="card">
+            <span
+              ><img
+                width="400px"
+                class="card-image"
+                src="../images/java.gif"
+                alt=""
+            /></span>
+            <div class="card-text">
+              <a href="course_detail.html"
+                ><p class="title">Java for Android</p></a
+              >
+              <span>Java</span>
+            </div>
+          </div>
+          <div class="card">
+            <span
+              ><img
+                width="400px"
+                class="card-image"
+                src="../images/c++.gif"
+                alt=""
+            /></span>
+            <div class="card-text">
+              <a href="course_detail.html"
+                ><p class="title">C++for Operationg Systems</p></a
+              >
+              <span>C++ </span>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
 <!-- <!DOCTYPE html>
 <html lang="en">
